@@ -3,44 +3,29 @@ layout: default
 title: Home
 ---
 
-<body class="min-h-screen bg-[url('/bg-enhanced.png')] bg-cover bg-center bg-no-repeat">
-    <!-- Subtle overlay to ensure readability -->
-
-    <!-- Main content -->
-    <div class="relative min-h-screen">
-        <!-- Simple nav -->
-        <!-- Hero Section -->
-        <div class="px-4 pt-20">
-            <div class="max-w-4xl mx-auto">
-                <div class="text-center backdrop-blur-sm bg-gray-900/40 rounded-2xl p-8 md:p-12 shadow-2xl border border-white/10">
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-                      Coming Soon
-                    </h1>
-                    <p class="text-xl text-teal-50 leading-relaxed mb-8">
-                    Explore the wild frontiers of AI with Ruby.</br></br> We celebrate the quick experiments, surprising hacks, and delightfully odd ideas that emerge when you combine Ruby's expressiveness with modern AI capabilities.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Community Card -->
-        <div class="px-4 pt-12">
-            <div class="max-w-4xl mx-auto">
-                <div class="backdrop-blur-md bg-red-900/30 rounded-2xl p-8 border border-red-300/20 shadow-xl">
-                    <div class="flex flex-col md:flex-row items-center justify-between gap-8">
-                        <div>
-                            <h2 class="text-2xl font-bold text-red-100 mb-3">Join our Community</h2>
-                        </div>
-                        <div class="flex gap-2">
-                            <a href="https://discord.gg/ruby-ai-builders-1081742403460923484" class="bg-red-500 hover:bg-red-600 text-white px-6 py-3 rounded-lg transition-colors duration-200">
-                                AI Builders Discord
-                            </a>
-                            <a href="https://lu.ma/ufk7pghd" class="bg-white/10 hover:bg-white/20 text-white px-6 py-3 rounded-lg transition-colors duration-200 backdrop-blur-sm">
-                                NYC Events
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<div class="grid grid-cols-8 mt-20">
+  <div class="col-span-3 col-start-2">
+    <div class="flex flex-col mt-32">
+      <img src="/assets/images/artificial_ruby_logo.svg" alt="Artificial Ruby" class="w-full">
+      <div id="form-container" class="mt-10 mb-5">
+        <form id="mce-EMAIL" action="https://sublayer.us14.list-manage.com/subscribe/post" method="post" class="w-full">
+          <div class="flex flex-col sm:flex-row gap-4 w-full">
+            <input type="hidden" name="u" value="d5e6863e7bc3fd8c3f1495e6d" />
+            <input type="hidden" name="id" value="ce70aaf6a0" />
+            <input type="email" name="MERGE0" id="MERGE0" placeholder="Enter your email" required
+                class="
+                       w-3/4
+                flex-1 px-4 py-3 rounded-lg
+                bg-white
+                text-gray-700 placeholder-gray-700/70 focus:outline-none focus:ring-2 focus:ring-[#EB7067]"
+                >
+                <button type="submit" class="px-6 py-3 bg-[#EB7067] hover:bg-[#C35A53] text-[#353F47] font-medium rounded-lg transition-colors duration-200">
+                  Join the Mailing List
+                </button>
+          </div>
+        </form>
+      </div>
+      <p>Bringing the Ruby mindset to the world of AI development</p>
     </div>
+  </div>
+</div>
