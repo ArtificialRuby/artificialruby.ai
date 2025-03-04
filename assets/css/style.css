@@ -553,6 +553,9 @@ video {
 .col-start-2 {
   grid-column-start: 2;
 }
+.col-start-3 {
+  grid-column-start: 3;
+}
 .col-start-4 {
   grid-column-start: 4;
 }
@@ -598,9 +601,6 @@ video {
 }
 .w-1\/2 {
   width: 50%;
-}
-.w-3\/4 {
-  width: 75%;
 }
 .w-full {
   width: 100%;
@@ -811,6 +811,10 @@ video {
   }
 }
 @media (min-width: 768px) {
+
+  .md\:w-3\/4 {
+    width: 75%;
+  }
 
   .md\:p-12 {
     padding: 3rem;
