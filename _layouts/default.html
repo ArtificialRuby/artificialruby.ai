@@ -4,19 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ site.title }}</title>
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
+    <link rel="icon" type="image/png" href="{{ '/assets/images/favicon.png' | relative_url }}" />
     <script defer data-domain="artificialruby.ai" src="https://plausible.io/js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=Lexend+Deca:wght@100..900&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     <style>
-    .site-background {
-    background-image: url('{{ "/assets/images/artruby_bg.jpg" | relative_url }}');
-    background-size: contain;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    }
+      .site-background {
+        background-image: url('{{ page.bg_image | relative_url }}');
+        background-size: contain;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
     </style>
   </head>
   <body class="min-h-screen site-background bg-[#F7F0E4]">
-    <main class="mt-8">
+    <header>
+      <nav class="mx-auto flex max-w-7xl items-center justify-center p-6 lg:px-8" aria-label="Global">
+        <div class="flex gap-x-12">
+          <a href="/" class="text-xl font-lexend-deca font-semibold {% if page.url == "/" %} text-highlight {% else %} text-base-content {% endif %}">Home</a>
+          <a href="/events" class="text-xl font-lexend-deca font-semibold {% if page.url == "/events.html" %} text-highlight {% else %} text-base-content {% endif %}">Events</a>
+          <a href="/sponsors" class="text-xl font-lexend-deca font-semibold {% if page.url == "/sponsors.html" %} text-highlight {% else %} text-base-content {% endif %}">Sponsors</a>
+          <a href="/about" class="text-xl font-lexend-deca font-semibold {% if page.url == "/about.html" %} text-highlight {% else %} text-base-content {% endif %}">About</a>
+        </div>
+      </nav>
+    </header>
+    <main class="mt-10 max-w-7xl mx-auto flex">
       {{ content }}
     </main>
     </div>

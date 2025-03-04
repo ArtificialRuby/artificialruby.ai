@@ -7,7 +7,17 @@ module.exports = {
     "./*.{html,md}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'base-content': '#363F48',
+        'highlight': '#D26F68'
+      },
+      fontFamily: {
+        'caudex': ['Caudex', 'serif'],
+        'lexend-deca': ['Lexend Deca', 'sans-serif'],
+        'lexend': ['Lexend', 'sans-serif'],
+      }
+    },
   },
   plugins: [],
 }
