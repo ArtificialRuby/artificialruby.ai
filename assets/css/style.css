@@ -535,17 +535,14 @@ video {
 .static {
   position: static;
 }
-.fixed {
-  position: fixed;
+.col-span-12 {
+  grid-column: span 12 / span 12;
 }
 .col-span-3 {
   grid-column: span 3 / span 3;
 }
 .col-span-4 {
   grid-column: span 4 / span 4;
-}
-.col-span-5 {
-  grid-column: span 5 / span 5;
 }
 .col-span-6 {
   grid-column: span 6 / span 6;
@@ -616,6 +613,9 @@ video {
 .flex-1 {
   flex: 1 1 0%;
 }
+.flex-grow {
+  flex-grow: 1;
+}
 .list-inside {
   list-style-position: inside;
 }
@@ -624,6 +624,9 @@ video {
 }
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+.grid-cols-12 {
+  grid-template-columns: repeat(12, minmax(0, 1fr));
 }
 .grid-cols-8 {
   grid-template-columns: repeat(8, minmax(0, 1fr));
@@ -649,6 +652,10 @@ video {
 .gap-x-12 {
   -moz-column-gap: 3rem;
        column-gap: 3rem;
+}
+.gap-x-2 {
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
 }
 .gap-x-5 {
   -moz-column-gap: 1.25rem;
@@ -683,6 +690,10 @@ video {
 }
 .border-dashed {
   border-style: dashed;
+}
+.border-\[\#E5DCCD\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(229 220 205 / var(--tw-border-opacity, 1));
 }
 .border-white {
   --tw-border-opacity: 1;
@@ -722,6 +733,10 @@ video {
   padding-left: 1rem;
   padding-right: 1rem;
 }
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -735,6 +750,9 @@ video {
 }
 .pb-20 {
   padding-bottom: 5rem;
+}
+.pb-5 {
+  padding-bottom: 1.25rem;
 }
 .pt-10 {
   padding-top: 2.5rem;
@@ -761,6 +779,10 @@ video {
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 .text-xl {
   font-size: 1.25rem;
@@ -852,8 +874,8 @@ video {
 }
 @media (min-width: 768px) {
 
-  .md\:col-span-2 {
-    grid-column: span 2 / span 2;
+  .md\:col-span-4 {
+    grid-column: span 4 / span 4;
   }
 
   .md\:col-span-6 {
@@ -864,8 +886,16 @@ video {
     grid-column-start: 2;
   }
 
+  .md\:col-start-3 {
+    grid-column-start: 3;
+  }
+
   .md\:col-start-4 {
     grid-column-start: 4;
+  }
+
+  .md\:col-start-5 {
+    grid-column-start: 5;
   }
 
   .md\:w-3\/4 {

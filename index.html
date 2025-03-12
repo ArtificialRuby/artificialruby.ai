@@ -1,14 +1,15 @@
 ---
 layout: default
 title: Home
-bg_image: assets/images/artruby_bg.jpg
+footer_image: assets/images/artruby_bg.jpg
 ---
 
-<div class="grid grid-cols-8 w-full min-h-1/4">
-  <div class="col-span-4 col-start-3">
+<div class="grid grid-cols-12 gap-x-2 px-5 md:px-0 w-full min-h-1/4">
+  <div class="col-span-12 md:col-span-6 md:col-start-4">
     <div class="flex flex-col">
       <img src="/assets/images/artificial_ruby_logo.svg" alt="Artificial Ruby" class="w-full">
-      <div id="form-container" class="mt-10 mb-5">
+      <p class="text-center font-caudex mt-10">A community of developers defining Ruby's place in AI</p>
+      <div id="form-container" class="mt-10 mb-5 border-b-4 border-dashed border-[#E5DCCD] pb-10">
         <form id="mce-EMAIL" action="https://sublayer.us14.list-manage.com/subscribe/post" method="post" class="w-full">
           <div class="flex flex-col sm:flex-row gap-4 w-full">
             <input type="hidden" name="u" value="d5e6863e7bc3fd8c3f1495e6d" />
@@ -20,7 +21,18 @@ bg_image: assets/images/artruby_bg.jpg
           </div>
         </form>
       </div>
-      <p class="text-center font-caudex">A community of developers focused on defining Ruby's place in AI</p>
+    </div>
+  </div>
+  <div class="col-span-12 md:col-span-4 md:col-start-5">
+    <div class="border-b-4 border-dashed border-white pb-5">
+      {%
+      include partials/homepage/upcoming_event.html
+      date="Wednesday, April 9, 2025"
+      url="https://lu.ma/51iv0zzl"
+      %}
+    </div>
+    <div class="mt-10">
+      {% include partials/homepage/call_for_speakers.html %}
     </div>
   </div>
 </div>
