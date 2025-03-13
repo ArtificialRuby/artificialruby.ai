@@ -4,6 +4,7 @@ module.exports = {
     "./_includes/**/*.{html,md}",
     "./_layouts/**/*.{html,md}",
     "./_posts/**/*.{html,md}",
+    "./events/**/*.{html,md}",
     "./*.{html,md}",
   ],
   theme: {
