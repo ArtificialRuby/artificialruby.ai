@@ -11,10 +11,10 @@ footer_image: assets/images/bg_events.jpg
       <div class="border-dashed border-t-4 border-b-4 border-white pt-10 pb-10 w-full text-center mt-20">
         {%
         include partials/events/upcoming_event.html
-        date="Wednesday, May 7, 2025"
+        date="Wednesday, July 16, 2025"
         location="Hosted by Betaworks - New York, NY"
         time="6:00 PM - 8:30 PM"
-        url="https://lu.ma/crm6e9sy"
+        url="https://lu.ma/vbbdhwm1"
         %}
       </div>
     </div>
@@ -23,6 +23,13 @@ footer_image: assets/images/bg_events.jpg
     <div class="my-10">
       <h2 class="text-center text-4xl font-caudex font-bold">Past Events</h2>
     </div>
+    {%
+      include partials/events/past_event.html
+      date="May 7, 2025"
+      location="Hosted by Betaworks - New York, NY"
+      url="/events/may-7-2025"
+      %}
+
     {%
     include partials/events/past_event.html
     date="April 9, 2025"
