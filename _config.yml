@@ -28,6 +28,27 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://artificialruby.ai" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  swerner
 
+# SEO and Social Media
+tagline: "Exploring AI with Ruby"
+twitter:
+  username: ruby_artificial
+  card: summary_large_image
+logo: /assets/images/artificial_ruby_logo.png
+social:
+  name: Artificial Ruby
+  links:
+    - https://twitter.com/ruby_artificial
+    - https://github.com/ArtificialRuby
+author:
+  name: Artificial Ruby Community
+  twitter: ruby_artificial
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/artruby_bg.jpg
+      lang: en
+
 # Build settings
 plugins:
   - jekyll-feed
