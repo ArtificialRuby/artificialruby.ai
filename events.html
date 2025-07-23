@@ -25,59 +25,61 @@ footer_image: assets/images/bg_events.jpg
     <div class="my-10">
       <h2 class="text-center text-4xl font-caudex font-bold">Past Events</h2>
     </div>
-    {%
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {%
+        include partials/events/past_event.html
+        date="July 16, 2025"
+        location="Hosted by Betaworks - New York, NY"
+        url="/events/july-16-2025"
+        %}
+
+      {%
+        include partials/events/past_event.html
+        date="May 7, 2025"
+        location="Hosted by Betaworks - New York, NY"
+        url="/events/may-7-2025"
+        %}
+
+      {%
       include partials/events/past_event.html
-      date="July 16, 2025"
+      date="April 9, 2025"
       location="Hosted by Betaworks - New York, NY"
-      url="/events/july-16-2025"
+      url="/events/april-9-2025"
       %}
 
-    {%
-      include partials/events/past_event.html
-      date="May 7, 2025"
-      location="Hosted by Betaworks - New York, NY"
-      url="/events/may-7-2025"
+      {%
+        include partials/events/past_event.html
+        date="March 4, 2025"
+        location="Hosted by Gusto - New York, NY"
+        url="/events/march-4-2025"
       %}
 
-    {%
-    include partials/events/past_event.html
-    date="April 9, 2025"
-    location="Hosted by Betaworks - New York, NY"
-    url="/events/april-9-2025"
-    %}
+      {%
+        include partials/events/past_event.html
+        date="February 5, 2025"
+        location="Hosted by Betaworks - New York, NY"
+        url="/events/february-5-2025"
+      %}
+      {%
+        include partials/events/past_event.html
+        date="October 8, 2024"
+        location="Hosted by Betaworks - New York, NY"
+        url="/events/october-8-2024"
+      %}
 
-    {%
-      include partials/events/past_event.html
-      date="March 4, 2025"
-      location="Hosted by Gusto - New York, NY"
-      url="/events/march-4-2025"
-    %}
+      {%
+        include partials/events/past_event.html
+        date="July 24, 2024"
+        location="22 Vanderbilt - New York, NY"
+        url="/events/july-24-2024"
+      %}
 
-    {%
-      include partials/events/past_event.html
-      date="February 5, 2025"
-      location="Hosted by Betaworks - New York, NY"
-      url="/events/february-5-2025"
-    %}
-    {%
-      include partials/events/past_event.html
-      date="October 8, 2024"
-      location="Hosted by Betaworks - New York, NY"
-      url="/events/october-8-2024"
-    %}
-
-    {%
-      include partials/events/past_event.html
-      date="July 24, 2024"
-      location="22 Vanderbilt - New York, NY"
-      url="/events/july-24-2024"
-    %}
-
-    {%
-      include partials/events/past_event.html
-      date="May 22, 2024"
-      location="22 Vanderbilt - New York, NY"
-      url="/events/may-22-2024"
-    %}
+      {%
+        include partials/events/past_event.html
+        date="May 22, 2024"
+        location="22 Vanderbilt - New York, NY"
+        url="/events/may-22-2024"
+      %}
+    </div>
   </div>
 </div>

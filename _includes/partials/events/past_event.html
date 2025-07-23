@@ -1,5 +1,7 @@
-<div class="text-center flex flex-col gap-y-5 border-dashed border-t-2 border-white py-10">
-  <h3 class="font-lexend font-bold text-2xl">{{ include.date }}</h3>
-  <h4 class="font-lexend text-md"> {{ include.location }}</h4>
-  <a href="{{ include.url }}" class="font-lexend text-highlight hover:text-base-content">See Recap</a>
-</div>
+<a href="{{ include.url }}" class="block">
+  <div class="text-center flex flex-col gap-y-5 border-dashed border-t-4 border-white p-8 cursor-pointer hover:bg-white">
+    <h3 class="font-lexend font-bold text-2xl">{{ include.date }}</h3>
+    <h4 class="font-lexend text-md">{{ include.location }}</h4>
+    <span class="font-lexend text-highlight hover:text-base-content">See Recap</span>
+  </div>
+</a>
